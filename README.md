@@ -33,13 +33,16 @@ might be easier for you to find in your Applications folder)
 
 To use it:
 
-4. open a Finder window and ctrl-click a file.
-5. select 'Open with' then 'Other...'
-6. a file sector pops up: find and select withEmacs
-7. optionally, if you want to always use emacsclient to open this
+4. [start the Emacs
+   server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
+   (for example with `M-x server-start` or `emacs --daemon`)
+5. open a Finder window and ctrl-click a file.
+6. select 'Open with' then 'Other...'
+7. a file sector pops up: find and select withEmacs
+8. optionally, if you want to always use emacsclient to open this
    file, select the 'Always Open With' checkbox
-8. select 'Open'
-9. when you are finished editing type `C-x #` or `M-x server-edit`.
+9. select 'Open'
+10. when you are finished editing type `C-x #` or `M-x server-edit`.
 
 There are many other options in macOS for using an app like this to
 open a file, such as the 'Open with: Change All ...' button in the
@@ -53,19 +56,21 @@ Finder Info window. Investigate these with Apple's documentation.
 
 To use it:
 
-4. open a Finder window and ctrl-click a file.
-5. select 'Services >' from the bottom of the popup menu
-6. select 'withEmacs'.
-7. when you are finished editing type `C-x #` or `M-x server-edit`.
+4. [start the Emacs
+   server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
+   (for example with `M-x server-start` or `emacs --daemon`)
+5. open a Finder window and ctrl-click a file.
+6. select 'Services >' from the bottom of the popup menu
+7. select 'withEmacs'.
+8. when you are finished editing type `C-x #` or `M-x server-edit`.
 
 ## Credit and troubleshooting
 
 The idea for this came from a Reddit post that I can't find at the
-moment. So I don't have to relearn how to use Automator each time I
-configure a Mac, I have posted the resulting code in a public git
-repository.
+moment. So I don't have to relearn Automator each time I configure a
+Mac, I have posted the resulting code in this public git repository.
 
-For other tips, see https://stackoverflow.com/a/39907215
+For configuration tips, see https://stackoverflow.com/a/39907215
 
 ## Wishlist
 
