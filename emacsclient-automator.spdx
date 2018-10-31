@@ -1,0 +1,6 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+PackageName: emacsclient-automator
+PackageOriginator: David Corking
+PackageHomePage: https://github.com/paironaut/emacsclient-automator
+PackageLicenseDeclared: MIT

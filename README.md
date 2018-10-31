@@ -1,5 +1,8 @@
 # emacsclient-automator
-
+<!--
+Copyright 2018, David Corking and the emacsclient-automator contributors
+SPDX-License-Identifier: MIT
+-->
 Tiny Automator workflows to make it easier to re-use your running
 Emacs.
 
@@ -7,7 +10,7 @@ Emacs users like to keep a single instance of their editor running,
 and merely open files in it. To do this easily from outside Emacs,
 Emacs comes with a tiny executable called
 [emacsclient](https://www.emacswiki.org/emacs/EmacsClient). From a
-command line, just run <pre>emacsclient <em>file</em></pre>.
+command line, just run <code>emacsclient <em>file</em></code>.
 
 From GUIs like macOS's Finder, you can drag and drop a file onto your
 Emacs window, but it is nice to bypass this as we do with other apps.
@@ -78,3 +81,8 @@ Control Emacs from your watch.
 
 Use Automator.app built in to macOS to edit these workflows. We'll
 consider helpful pull requests. See the wishlist above.
+
+## Copyright and license
+
+Copyright 2018, David Corking and the emacsclient-automator
+contributors. Open source MIT License, see [LICENSE.txt](LICENSE.txt)
