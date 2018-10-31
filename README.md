@@ -1,1 +1,80 @@
 # emacsclient-automator
+
+Tiny Automator workflows to make it easier to re-use your running
+Emacs.
+
+Emacs users like to keep a single instance of their editor running,
+and merely open files in it. To do this easily from outside Emacs,
+Emacs comes with a tiny executable called
+[emacsclient](https://www.emacswiki.org/emacs/EmacsClient). From a
+command line, just run <pre>emacsclient <em>file</em></pre>.
+
+From GUIs like macOS's Finder, you can drag and drop a file onto your
+Emacs window, but it is nice to bypass this as we do with other apps.
+
+Choose either the app or the service, instructions below: you might
+not need both.
+
+**Warning** these are hardcoded to the path Homebrew uses for
+emacsclient: `/usr/local/bin/emacsclient`. If your emacsclient is
+elsewhere, you *must edit* the workflow.
+
+## App
+
+(steps 2 and 3 are optional - you can run an app from anywhere, but it
+might be easier for you to find in your Applications folder)
+
+1. `cd && git clone https://github.com/paironaut/emacsclient-automator.git`
+2. `cd emacsclient-automator`
+3. `cp -R withEmacsApp.app /Applications`
+
+To use it:
+
+4. open a Finder window and ctrl-click a file.
+5. select 'Open with' then 'Other...'
+6. a file sector pops up: find and select withEmacs
+7. optionally, if you want to always use emacsclient to open this
+   file, select the 'Always Open With' checkbox
+8. select 'Open'
+9. when you are finished editing type `C-x #` or `M-x server-edit`.
+
+There are many other options in macOS for using an app like this to
+open a file, such as the 'Open with: Change All ...' button in the
+Finder Info window. Investigate these with Apple's documentation.
+
+## Service
+
+1. `cd && git clone https://github.com/paironaut/emacsclient-automator.git`
+2. `cd emacsclient-automator`
+3. `cp -R withEmacs.workflow ~/Library/Services`
+
+To use it:
+
+4. open a Finder window and ctrl-click a file.
+5. select 'Services >' from the bottom of the popup menu
+6. select 'withEmacs'.
+7. when you are finished editing type `C-x #` or `M-x server-edit`.
+
+## Credit and troubleshooting
+
+The idea for this came from a Reddit post that I can't find at the
+moment. So I don't have to relearn how to use Automator each time I
+configure a Mac, I have posted the resulting code in a public git
+repository.
+
+For other tips, see https://stackoverflow.com/a/39907215
+
+## Wishlist
+
+1. a custom icon
+2. make the icon appear on associated files
+3. drag and drop files onto the app icon
+
+## Coming soon
+
+Control Emacs from your watch.
+
+## Contributing
+
+Use Automator.app built in to macOS to edit these workflows. We'll
+consider helpful pull requests. See the wishlist above.
