@@ -58,7 +58,8 @@ Finder Info window. Investigate these with Apple's documentation.
 
 1. `cd && git clone https://github.com/paironaut/emacsclient-automator.git`
 2. `cd emacsclient-automator`
-3. `cp -R withEmacs.workflow ~/Library/Services`
+3. `open`
+4. In Finder, double-click on withEmacs.workflow and agree to install it.
 
 To use it:
 
@@ -66,7 +67,7 @@ To use it:
    server](https://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
    (for example with `M-x server-start` or `emacs --daemon`)
 5. open a Finder window and ctrl-click a file.
-6. select 'Services >' from the bottom of the popup menu
+6. select 'Services >' from the bottom of the popup menu (if it appears)
 7. select 'withEmacs'.
 8. when you are finished editing type `C-x #` or `M-x server-edit`.
 
