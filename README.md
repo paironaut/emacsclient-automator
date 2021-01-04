@@ -18,9 +18,15 @@ Emacs window, but it is nice to bypass this as we do with other apps.
 Choose either the app or the service, instructions below: you might
 not need both.
 
-**Warning** these are hardcoded to the path Homebrew uses for
-emacsclient: `/usr/local/bin/emacsclient`. If your emacsclient is
-elsewhere, you *must edit* the workflow.
+## Known issues
+
+1. **Warning** these are hardcoded to the path Homebrew uses for
+   emacsclient: `/usr/local/bin/emacsclient`. If your emacsclient is
+   elsewhere, you *must edit* the workflow.
+
+2. This only works well with folders and text files. It behaves very
+   oddly, for example, with PNG images, and does not open the image
+   file.
 
 ## App
 
